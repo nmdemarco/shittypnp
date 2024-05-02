@@ -492,7 +492,7 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbba49edae25e8" name="Position 109" enabled="true" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="109.0" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbba49edae25e8" name="Position 109" enabled="true" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="109.0" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="20.087824480394147" y="28.853469636048473" z="-21.4" rotation="-0.5589654808320923"/>
             <hole-1-location units="Millimeters" x="18.122064371570115" y="32.37281434700762" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="22.121874022279055" y="32.333791813829976" z="0.0" rotation="-0.0"/>
@@ -518,7 +518,7 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbaa2d345e2c8" name="Position 108" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="108.0" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbaa2d345e2c8" name="Position 108" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="108.0" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="20.08133025597079" y="41.34645808489519" z="-21.4" rotation="-0.5589654808320923"/>
             <hole-1-location units="Millimeters" x="18.11557014714676" y="44.865802795854336" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="22.1153797978557" y="44.82678026267669" z="0.0" rotation="-0.0"/>
@@ -544,7 +544,7 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbac40ae03e9c" name="Position 107" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="107.0" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbac40ae03e9c" name="Position 107" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="107.0" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="20.08631870481751" y="53.76545038412634" z="-21.4" rotation="-0.5589654808320923"/>
             <hole-1-location units="Millimeters" x="18.12055859599348" y="57.284795095085485" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="22.12036824670242" y="57.24577256190784" z="0.0" rotation="-0.0"/>
@@ -570,7 +570,7 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbae04df91110" name="Position 106" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="106.0" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbae04df91110" name="Position 106" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="106.0" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="20.058361059046195" y="66.29845808489519" z="-21.4" rotation="-0.5589654808321969"/>
             <hole-1-location units="Millimeters" x="18.092600950222167" y="69.81780279585433" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="22.092410600931107" y="69.77878026267669" z="0.0" rotation="-0.0"/>
@@ -596,7 +596,7 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbafcad9052e8" name="Position 105" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="105.0" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbafcad9052e8" name="Position 105" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="105.0" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="20.023245547513408" y="78.80993690778084" z="-21.4" rotation="-0.5589654808319878"/>
             <hole-1-location units="Millimeters" x="18.05748543868937" y="82.32928161873998" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="22.057295089398316" y="82.29025908556234" z="0.0" rotation="-0.0"/>
@@ -622,7 +622,7 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb0de0e12cc4" name="Position 104" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="104.0" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb0de0e12cc4" name="Position 104" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="104.0" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="20.02025709866669" y="91.28144268335748" z="-21.4" rotation="-0.5589654808319878"/>
             <hole-1-location units="Millimeters" x="18.05449698984265" y="94.80078739431663" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="22.054306640551598" y="94.76176486113899" z="0.0" rotation="-0.0"/>
@@ -648,7 +648,7 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb1edd6fd8b8" name="Position 103" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="103.0" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb1edd6fd8b8" name="Position 103" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="103.0" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="20.00785528346956" y="103.84545038412634" z="-21.4" rotation="-0.5589654808321969"/>
             <hole-1-location units="Millimeters" x="18.04209517464553" y="107.36479509508548" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="22.04190482535447" y="107.32577256190784" z="0.0" rotation="-0.0"/>
@@ -674,7 +674,7 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb33b1400168" name="Position 102" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="102.0" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb33b1400168" name="Position 102" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="102.0" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="19.91520683740842" y="116.68995760915357" z="-21.4" rotation="-1.1178245823861845"/>
             <hole-1-location units="Millimeters" x="17.983867140733388" y="120.22830849283471" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="21.98310590657563" y="120.15027456569632" z="0.0" rotation="-0.0"/>
@@ -700,7 +700,7 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb4fb94a8394" name="Position 101" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="101.0" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb4fb94a8394" name="Position 101" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="101.0" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="19.952773017018714" y="128.7023485719399" z="-21.4" rotation="-0.2794893905449689"/>
             <hole-1-location units="Millimeters" x="17.969869779558188" y="132.21206291229134" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="21.96982218968769" y="132.1925509493151" z="0.0" rotation="-0.0"/>
@@ -726,7 +726,7 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb6b0f7e0d10" name="Position 100" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="100.0" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb6b0f7e0d10" name="Position 100" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="100.0" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="19.920796119325274" y="141.37378889098133" z="-21.4" rotation="-0.2794893905449689"/>
             <hole-1-location units="Millimeters" x="17.937892881864748" y="144.88350323133278" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="21.93784529199425" y="144.86399126835653" z="0.0" rotation="-0.0"/>
@@ -752,7 +752,7 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb89b340f0e8" name="Position 111" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="111.0" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb89b340f0e8" name="Position 111" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="111.0" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="19.835303028857904" y="3.6795576295980066" z="-21.4" rotation="-0.2794893905447337"/>
             <hole-1-location units="Millimeters" x="17.852399791397364" y="7.1892719699494405" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="21.852352201526866" y="7.1697600069732" z="0.0" rotation="-0.0"/>
@@ -778,7 +778,7 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb9fa1bf676c" name="Position 112" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="112.0" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb9fa1bf676c" name="Position 112" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="112.0" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="0.0" y="0.0" z="-21.4" rotation="0.0"/>
             <hole-1-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <hole-2-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -804,7 +804,7 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbda4270c33b8" name="BambooFeederAutoVision" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="ColorKeyed" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-value="0.0" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbda4270c33b8" name="BambooFeederAutoVision" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="ColorKeyed" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-value="0.0" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <hole-1-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <hole-2-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -835,7 +835,7 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbda63b731658" name="BambooFeederAutoVision" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="ColorKeyed" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-value="0.0" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbda63b731658" name="BambooFeederAutoVision" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="ColorKeyed" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-value="0.0" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <hole-1-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <hole-2-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -866,7 +866,7 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbda78ed300f0" name="BambooFeederAutoVision" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="ColorKeyed" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-value="0.0" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbda78ed300f0" name="BambooFeederAutoVision" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="ColorKeyed" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-value="0.0" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <hole-1-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <hole-2-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -1491,126 +1491,6 @@
             <vacuum-difference-part-off-high>300.0</vacuum-difference-part-off-high>
             <diameter-low value="0.0" units="Millimeters"/>
          </nozzle-tip>
-         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP169e2c6fd4b3f656" name="CN220" pick-dwell-milliseconds="350" place-dwell-milliseconds="300" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="true" establish-part-on-level="true" establish-part-off-level="true" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
-            <changer-start-location units="Millimeters" x="292.4" y="-38.45" z="0.0" rotation="0.0"/>
-            <changer-start-to-mid-speed>0.4</changer-start-to-mid-speed>
-            <changer-mid-location units="Millimeters" x="292.4" y="-38.45" z="-30.7" rotation="0.0"/>
-            <changer-mid-to-mid-2-speed>0.25</changer-mid-to-mid-2-speed>
-            <changer-mid-location-2 units="Millimeters" x="292.4" y="-27.0" z="-30.7" rotation="0.0"/>
-            <changer-mid-2-to-end-speed>0.25</changer-mid-2-to-end-speed>
-            <changer-end-location units="Millimeters" x="292.4" y="-27.0" z="0.0" rotation="0.0"/>
-            <touch-location units="Millimeters" x="-2.052000000000021" y="15.852" z="-2.0" rotation="0.0"/>
-            <vision-calibration-Z-adjust value="0.0" units="Millimeters"/>
-            <vision-template-dimension-x value="10.0" units="Millimeters"/>
-            <vision-template-dimension-y value="10.0" units="Millimeters"/>
-            <vision-template-tolerance value="4.0" units="Millimeters"/>
-            <vision-calibration-tolerance value="0.7" units="Millimeters"/>
-            <min-part-diameter value="4.2" units="Millimeters"/>
-            <max-part-diameter value="20.0" units="Millimeters"/>
-            <max-part-height value="10.0" units="Millimeters"/>
-            <max-pick-tolerance value="0.4" units="Millimeters"/>
-            <calibration angle-subdivisions="6" allow-misdetections="1" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="false" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChange" background-calibration-method="Brightness" background-min-hue="0" background-max-hue="255" background-tol-hue="8" background-min-saturation="0" background-max-saturation="255" background-tol-saturation="8" background-min-value="0" background-max-value="102" background-tol-value="8" background-diagnostics="&lt;html&gt;Background elements are sufficiently dark. &lt;br/&gt;&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
-               <pipeline>
-                  <stages>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="false" settle-option="Settle" count="1">
-                        <light class="java.lang.Boolean">true</light>
-                     </cv-stage>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="1" enabled="true" diameter="360" property-name="MaskCircle"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="2" enabled="true" conversion="Bgr2Gray"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="3" enabled="true" threshold="55" auto="true" invert="false"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="4" enabled="true" kernel-size="5"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCircularSymmetry" name="results" enabled="true" min-diameter="40" max-diameter="60" max-distance="50" search-width="0" search-height="0" max-target-count="1" min-symmetry="1.2" corr-symmetry="0.0" outer-margin="0.2" inner-margin="0.4" sub-sampling="8" super-sampling="1" symmetry-score="OverallVarianceVsRingVarianceSum" property-name="" diagnostics="false" heat-map="false"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="5" enabled="true" image-stage-name="0"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="6" enabled="true" circles-stage-name="results" thickness="2">
-                        <color r="255" g="255" b="102" a="255"/>
-                        <center-color r="255" g="51" b="255" a="255"/>
-                     </cv-stage>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="7" enabled="false" prefix="runoutCalibration" suffix=".png"/>
-                  </stages>
-               </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap"/>
-               <minimum-detail-size value="0.2" units="Millimeters"/>
-               <offset-threshold-length value="3.0" units="Millimeters"/>
-               <calibration-Z-offset value="0.0" units="Millimeters"/>
-               <calibration-tip-diameter value="2.4" units="Millimeters"/>
-            </calibration>
-            <method-part-on>Absolute</method-part-on>
-            <part-on-check-after-pick>true</part-on-check-after-pick>
-            <part-on-check-align>false</part-on-check-align>
-            <part-on-check-before-place>false</part-on-check-before-place>
-            <vacuum-level-part-on-low>15.0</vacuum-level-part-on-low>
-            <vacuum-level-part-on-high>55.0</vacuum-level-part-on-high>
-            <vacuum-difference-part-on-low>-5.0</vacuum-difference-part-on-low>
-            <vacuum-difference-part-on-high>5.0</vacuum-difference-part-on-high>
-            <method-part-off>Absolute</method-part-off>
-            <part-off-check-after-place>false</part-off-check-after-place>
-            <part-off-check-before-pick>false</part-off-check-before-pick>
-            <vacuum-level-part-off-low>0.0</vacuum-level-part-off-low>
-            <vacuum-level-part-off-high>8.0</vacuum-level-part-off-high>
-            <vacuum-difference-part-off-low>-20.0</vacuum-difference-part-off-low>
-            <vacuum-difference-part-off-high>10.0</vacuum-difference-part-off-high>
-            <diameter-low value="0.0" units="Millimeters"/>
-         </nozzle-tip>
-         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP169e2c74aeda7d2e" name="CN750" pick-dwell-milliseconds="450" place-dwell-milliseconds="500" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="true" establish-part-on-level="true" establish-part-off-level="true" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
-            <changer-start-location units="Millimeters" x="278.0" y="-38.25" z="0.0" rotation="0.0"/>
-            <changer-start-to-mid-speed>0.4</changer-start-to-mid-speed>
-            <changer-mid-location units="Millimeters" x="278.0" y="-38.25" z="-30.7" rotation="0.0"/>
-            <changer-mid-to-mid-2-speed>0.25</changer-mid-to-mid-2-speed>
-            <changer-mid-location-2 units="Millimeters" x="278.0" y="-27.0" z="-30.7" rotation="0.0"/>
-            <changer-mid-2-to-end-speed>0.25</changer-mid-2-to-end-speed>
-            <changer-end-location units="Millimeters" x="278.0" y="-27.0" z="0.0" rotation="0.0"/>
-            <touch-location units="Millimeters" x="-42.55200000000002" y="15.852" z="-8.0" rotation="0.0"/>
-            <vision-calibration-Z-adjust value="0.0" units="Millimeters"/>
-            <vision-template-dimension-x value="10.0" units="Millimeters"/>
-            <vision-template-dimension-y value="10.0" units="Millimeters"/>
-            <vision-template-tolerance value="4.0" units="Millimeters"/>
-            <vision-calibration-tolerance value="0.7" units="Millimeters"/>
-            <min-part-diameter value="9.5" units="Millimeters"/>
-            <max-part-diameter value="26.0" units="Millimeters"/>
-            <max-part-height value="10.0" units="Millimeters"/>
-            <max-pick-tolerance value="1.0" units="Millimeters"/>
-            <calibration angle-subdivisions="6" allow-misdetections="2" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="false" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChange" background-calibration-method="Brightness" background-min-hue="0" background-max-hue="255" background-tol-hue="8" background-min-saturation="0" background-max-saturation="255" background-tol-saturation="8" background-min-value="0" background-max-value="121" background-tol-value="8" background-diagnostics="&lt;html&gt;Background elements are sufficiently dark. &lt;br/&gt;&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
-               <pipeline>
-                  <stages>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="false" settle-option="Settle" count="1">
-                        <light class="java.lang.Boolean">true</light>
-                     </cv-stage>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="1" enabled="true" diameter="550" property-name="MaskCircle"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="2" enabled="true" conversion="Bgr2Gray"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="3" enabled="true" threshold="55" auto="true" invert="false"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="4" enabled="true" kernel-size="5"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCircularSymmetry" name="results" enabled="true" min-diameter="120" max-diameter="220" max-distance="60" search-width="40" search-height="40" max-target-count="1" min-symmetry="1.2" corr-symmetry="0.0" outer-margin="0.2" inner-margin="0.4" sub-sampling="8" super-sampling="1" symmetry-score="OverallVarianceVsRingVarianceSum" property-name="" diagnostics="false" heat-map="false"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="5" enabled="true" image-stage-name="0"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="6" enabled="true" circles-stage-name="results" thickness="2">
-                        <color r="255" g="255" b="102" a="255"/>
-                        <center-color r="255" g="51" b="255" a="255"/>
-                     </cv-stage>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="7" enabled="false" prefix="runoutCalibration" suffix=".png"/>
-                  </stages>
-               </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap"/>
-               <minimum-detail-size value="0.2" units="Millimeters"/>
-               <offset-threshold-length value="3.0" units="Millimeters"/>
-               <calibration-Z-offset value="0.0" units="Millimeters"/>
-               <calibration-tip-diameter value="6.0" units="Millimeters"/>
-            </calibration>
-            <method-part-on>Absolute</method-part-on>
-            <part-on-check-after-pick>false</part-on-check-after-pick>
-            <part-on-check-align>false</part-on-check-align>
-            <part-on-check-before-place>false</part-on-check-before-place>
-            <vacuum-level-part-on-low>12.0</vacuum-level-part-on-low>
-            <vacuum-level-part-on-high>55.0</vacuum-level-part-on-high>
-            <vacuum-difference-part-on-low>0.0</vacuum-difference-part-on-low>
-            <vacuum-difference-part-on-high>0.0</vacuum-difference-part-on-high>
-            <method-part-off>Absolute</method-part-off>
-            <part-off-check-after-place>false</part-off-check-after-place>
-            <part-off-check-before-pick>false</part-off-check-before-pick>
-            <vacuum-level-part-off-low>0.0</vacuum-level-part-off-low>
-            <vacuum-level-part-off-high>8.0</vacuum-level-part-off-high>
-            <vacuum-difference-part-off-low>0.0</vacuum-difference-part-off-low>
-            <vacuum-difference-part-off-high>0.0</vacuum-difference-part-off-high>
-            <diameter-low value="0.0" units="Millimeters"/>
-         </nozzle-tip>
          <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP173360e1c942ca97" name="CN140" pick-dwell-milliseconds="300" place-dwell-milliseconds="250" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="true" establish-part-on-level="true" establish-part-off-level="true" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
             <changer-start-location units="Millimeters" x="59.452" y="-38.5" z="0.0" rotation="0.0"/>
             <changer-start-to-mid-speed>0.4</changer-start-to-mid-speed>
@@ -1671,6 +1551,66 @@
             <vacuum-difference-part-off-high>0.0</vacuum-difference-part-off-high>
             <diameter-low value="0.0" units="Millimeters"/>
          </nozzle-tip>
+         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP169e2c6fd4b3f656" name="CN220" pick-dwell-milliseconds="350" place-dwell-milliseconds="300" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="true" establish-part-on-level="true" establish-part-off-level="true" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
+            <changer-start-location units="Millimeters" x="292.4" y="-38.45" z="0.0" rotation="0.0"/>
+            <changer-start-to-mid-speed>0.4</changer-start-to-mid-speed>
+            <changer-mid-location units="Millimeters" x="292.4" y="-38.45" z="-30.7" rotation="0.0"/>
+            <changer-mid-to-mid-2-speed>0.25</changer-mid-to-mid-2-speed>
+            <changer-mid-location-2 units="Millimeters" x="292.4" y="-27.0" z="-30.7" rotation="0.0"/>
+            <changer-mid-2-to-end-speed>0.25</changer-mid-2-to-end-speed>
+            <changer-end-location units="Millimeters" x="292.4" y="-27.0" z="0.0" rotation="0.0"/>
+            <touch-location units="Millimeters" x="-2.052000000000021" y="15.852" z="-2.0" rotation="0.0"/>
+            <vision-calibration-Z-adjust value="0.0" units="Millimeters"/>
+            <vision-template-dimension-x value="10.0" units="Millimeters"/>
+            <vision-template-dimension-y value="10.0" units="Millimeters"/>
+            <vision-template-tolerance value="4.0" units="Millimeters"/>
+            <vision-calibration-tolerance value="0.7" units="Millimeters"/>
+            <min-part-diameter value="4.2" units="Millimeters"/>
+            <max-part-diameter value="20.0" units="Millimeters"/>
+            <max-part-height value="10.0" units="Millimeters"/>
+            <max-pick-tolerance value="0.4" units="Millimeters"/>
+            <calibration angle-subdivisions="6" allow-misdetections="1" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="false" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChange" background-calibration-method="Brightness" background-min-hue="0" background-max-hue="255" background-tol-hue="8" background-min-saturation="0" background-max-saturation="255" background-tol-saturation="8" background-min-value="0" background-max-value="102" background-tol-value="8" background-diagnostics="&lt;html&gt;Background elements are sufficiently dark. &lt;br/&gt;&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
+               <pipeline>
+                  <stages>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="false" settle-option="Settle" count="1">
+                        <light class="java.lang.Boolean">true</light>
+                     </cv-stage>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="1" enabled="true" diameter="360" property-name="MaskCircle"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="2" enabled="true" conversion="Bgr2Gray"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="3" enabled="true" threshold="55" auto="true" invert="false"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="4" enabled="true" kernel-size="5"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCircularSymmetry" name="results" enabled="true" min-diameter="40" max-diameter="60" max-distance="50" search-width="0" search-height="0" max-target-count="1" min-symmetry="1.2" corr-symmetry="0.0" outer-margin="0.2" inner-margin="0.4" sub-sampling="8" super-sampling="1" symmetry-score="OverallVarianceVsRingVarianceSum" property-name="" diagnostics="false" heat-map="false"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="5" enabled="true" image-stage-name="0"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="6" enabled="true" circles-stage-name="results" thickness="2">
+                        <color r="255" g="255" b="102" a="255"/>
+                        <center-color r="255" g="51" b="255" a="255"/>
+                     </cv-stage>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="7" enabled="false" prefix="runoutCalibration" suffix=".png"/>
+                  </stages>
+               </pipeline>
+               <runout-compensation-lookup class="java.util.HashMap"/>
+               <minimum-detail-size value="0.2" units="Millimeters"/>
+               <offset-threshold-length value="3.0" units="Millimeters"/>
+               <calibration-Z-offset value="0.0" units="Millimeters"/>
+               <calibration-tip-diameter value="2.4" units="Millimeters"/>
+            </calibration>
+            <method-part-on>Absolute</method-part-on>
+            <part-on-check-after-pick>true</part-on-check-after-pick>
+            <part-on-check-align>false</part-on-check-align>
+            <part-on-check-before-place>false</part-on-check-before-place>
+            <vacuum-level-part-on-low>15.0</vacuum-level-part-on-low>
+            <vacuum-level-part-on-high>55.0</vacuum-level-part-on-high>
+            <vacuum-difference-part-on-low>-5.0</vacuum-difference-part-on-low>
+            <vacuum-difference-part-on-high>5.0</vacuum-difference-part-on-high>
+            <method-part-off>Absolute</method-part-off>
+            <part-off-check-after-place>false</part-off-check-after-place>
+            <part-off-check-before-pick>false</part-off-check-before-pick>
+            <vacuum-level-part-off-low>0.0</vacuum-level-part-off-low>
+            <vacuum-level-part-off-high>8.0</vacuum-level-part-off-high>
+            <vacuum-difference-part-off-low>-20.0</vacuum-difference-part-off-low>
+            <vacuum-difference-part-off-high>10.0</vacuum-difference-part-off-high>
+            <diameter-low value="0.0" units="Millimeters"/>
+         </nozzle-tip>
          <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP173360e52503de42" name="CN400" pick-dwell-milliseconds="400" place-dwell-milliseconds="500" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="true" establish-part-on-level="true" establish-part-off-level="true" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
             <changer-start-location units="Millimeters" x="304.8" y="-38.4" z="0.0" rotation="0.0"/>
             <changer-start-to-mid-speed>0.4</changer-start-to-mid-speed>
@@ -1713,6 +1653,66 @@
                <offset-threshold-length value="0.5" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
                <calibration-tip-diameter value="4.0" units="Millimeters"/>
+            </calibration>
+            <method-part-on>Absolute</method-part-on>
+            <part-on-check-after-pick>false</part-on-check-after-pick>
+            <part-on-check-align>false</part-on-check-align>
+            <part-on-check-before-place>false</part-on-check-before-place>
+            <vacuum-level-part-on-low>12.0</vacuum-level-part-on-low>
+            <vacuum-level-part-on-high>55.0</vacuum-level-part-on-high>
+            <vacuum-difference-part-on-low>0.0</vacuum-difference-part-on-low>
+            <vacuum-difference-part-on-high>0.0</vacuum-difference-part-on-high>
+            <method-part-off>Absolute</method-part-off>
+            <part-off-check-after-place>false</part-off-check-after-place>
+            <part-off-check-before-pick>false</part-off-check-before-pick>
+            <vacuum-level-part-off-low>0.0</vacuum-level-part-off-low>
+            <vacuum-level-part-off-high>8.0</vacuum-level-part-off-high>
+            <vacuum-difference-part-off-low>0.0</vacuum-difference-part-off-low>
+            <vacuum-difference-part-off-high>0.0</vacuum-difference-part-off-high>
+            <diameter-low value="0.0" units="Millimeters"/>
+         </nozzle-tip>
+         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP169e2c74aeda7d2e" name="CN750" pick-dwell-milliseconds="450" place-dwell-milliseconds="500" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="true" establish-part-on-level="true" establish-part-off-level="true" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
+            <changer-start-location units="Millimeters" x="278.0" y="-38.25" z="0.0" rotation="0.0"/>
+            <changer-start-to-mid-speed>0.4</changer-start-to-mid-speed>
+            <changer-mid-location units="Millimeters" x="278.0" y="-38.25" z="-30.7" rotation="0.0"/>
+            <changer-mid-to-mid-2-speed>0.25</changer-mid-to-mid-2-speed>
+            <changer-mid-location-2 units="Millimeters" x="278.0" y="-27.0" z="-30.7" rotation="0.0"/>
+            <changer-mid-2-to-end-speed>0.25</changer-mid-2-to-end-speed>
+            <changer-end-location units="Millimeters" x="278.0" y="-27.0" z="0.0" rotation="0.0"/>
+            <touch-location units="Millimeters" x="-42.55200000000002" y="15.852" z="-8.0" rotation="0.0"/>
+            <vision-calibration-Z-adjust value="0.0" units="Millimeters"/>
+            <vision-template-dimension-x value="10.0" units="Millimeters"/>
+            <vision-template-dimension-y value="10.0" units="Millimeters"/>
+            <vision-template-tolerance value="4.0" units="Millimeters"/>
+            <vision-calibration-tolerance value="0.7" units="Millimeters"/>
+            <min-part-diameter value="9.5" units="Millimeters"/>
+            <max-part-diameter value="26.0" units="Millimeters"/>
+            <max-part-height value="10.0" units="Millimeters"/>
+            <max-pick-tolerance value="1.0" units="Millimeters"/>
+            <calibration angle-subdivisions="6" allow-misdetections="2" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="false" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChange" background-calibration-method="Brightness" background-min-hue="0" background-max-hue="255" background-tol-hue="8" background-min-saturation="0" background-max-saturation="255" background-tol-saturation="8" background-min-value="0" background-max-value="121" background-tol-value="8" background-diagnostics="&lt;html&gt;Background elements are sufficiently dark. &lt;br/&gt;&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
+               <pipeline>
+                  <stages>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="false" settle-option="Settle" count="1">
+                        <light class="java.lang.Boolean">true</light>
+                     </cv-stage>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="1" enabled="true" diameter="550" property-name="MaskCircle"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="2" enabled="true" conversion="Bgr2Gray"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="3" enabled="true" threshold="55" auto="true" invert="false"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="4" enabled="true" kernel-size="5"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCircularSymmetry" name="results" enabled="true" min-diameter="120" max-diameter="220" max-distance="60" search-width="40" search-height="40" max-target-count="1" min-symmetry="1.2" corr-symmetry="0.0" outer-margin="0.2" inner-margin="0.4" sub-sampling="8" super-sampling="1" symmetry-score="OverallVarianceVsRingVarianceSum" property-name="" diagnostics="false" heat-map="false"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="5" enabled="true" image-stage-name="0"/>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="6" enabled="true" circles-stage-name="results" thickness="2">
+                        <color r="255" g="255" b="102" a="255"/>
+                        <center-color r="255" g="51" b="255" a="255"/>
+                     </cv-stage>
+                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="7" enabled="false" prefix="runoutCalibration" suffix=".png"/>
+                  </stages>
+               </pipeline>
+               <runout-compensation-lookup class="java.util.HashMap"/>
+               <minimum-detail-size value="0.2" units="Millimeters"/>
+               <offset-threshold-length value="3.0" units="Millimeters"/>
+               <calibration-Z-offset value="0.0" units="Millimeters"/>
+               <calibration-tip-diameter value="6.0" units="Millimeters"/>
             </calibration>
             <method-part-on>Absolute</method-part-on>
             <part-on-check-after-pick>false</part-on-check-after-pick>
