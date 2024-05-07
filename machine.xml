@@ -1,5 +1,5 @@
 <openpnp-machine>
-   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="0.51" auto-tool-select="true" safe-Z-park="true">
+   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="0.8300000000000001" auto-tool-select="true" safe-Z-park="true">
       <axes>
          <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS168fe78b98301464" name="X" type="X" driver-id="DRV168fe78b90edce6a" letter="X" backlash-compensation-method="OneSidedPositioning" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
             <home-coordinate value="0.0" units="Millimeters"/>
@@ -10,7 +10,7 @@
             <soft-limit-high value="335.0" units="Millimeters"/>
             <safe-zone-low value="0.0" units="Millimeters"/>
             <safe-zone-high value="0.0" units="Millimeters"/>
-            <feedrate-per-second value="650.0" units="Millimeters"/>
+            <feedrate-per-second value="500.0" units="Millimeters"/>
             <acceleration-per-second-2 value="3000.0" units="Millimeters"/>
             <jerk-per-second-3 value="0.0" units="Millimeters"/>
             <resolution>0.00625</resolution>
@@ -112,8 +112,8 @@
             <soft-limit-high value="360.0" units="Millimeters"/>
             <safe-zone-low value="0.0" units="Millimeters"/>
             <safe-zone-high value="0.0" units="Millimeters"/>
-            <feedrate-per-second value="750.0" units="Millimeters"/>
-            <acceleration-per-second-2 value="4000.0" units="Millimeters"/>
+            <feedrate-per-second value="500.0" units="Millimeters"/>
+            <acceleration-per-second-2 value="3000.0" units="Millimeters"/>
             <jerk-per-second-3 value="0.0" units="Millimeters"/>
             <resolution>0.00625</resolution>
             <step-test-graph relative-padding-left="0.05" relative-padding-right="0.0" logarithmic="false" zero-nano-time="-9223372036854775808" last-t="0">
@@ -263,7 +263,7 @@
          </axis>
       </axes>
       <heads>
-         <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1" vacuum-pump-control="PartOn" pump-on-wait-milliseconds="300" visual-homing-method="ResetToFiducialLocation" nozzle-solution="DualNegated" nozzle-solutions-multiplier="1">
+         <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1" vacuum-pump-control="TaskDuration" pump-on-wait-milliseconds="300" visual-homing-method="ResetToFiducialLocation" nozzle-solution="DualNegated" nozzle-solutions-multiplier="1">
             <nozzles>
                <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168fe78b98301464" axis-Y-id="AXS168fe78b9841e323" axis-Z-id="AXS168fe78b98436bb3" axis-rotation-id="AXS168fe78b986a2b04" id="N1" name="N1" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="TIP1733796f5b64cc56" changer-enabled="false" nozzle-tip-changed-on-manual-feed="true" enable-dynamic-safe-z="false" blow-off-closing-valve="false" version="200" limit-rotation="false">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
@@ -275,10 +275,10 @@
                      <string>TIP173360e52503de42</string>
                      <string>TIP169e2c74aeda7d2e</string>
                   </compatible-nozzle-tip-ids>
-                  <head-offsets units="Millimeters" x="-13.503988586531397" y="-46.63923760709547" z="0.0" rotation="0.0"/>
-                  <manual-nozzle-tip-change-location units="Millimeters" x="155.89" y="-40.528" z="0.0" rotation="0.0"/>
-                  <vacuum-sense-actuator-name>N1_VAC</vacuum-sense-actuator-name>
-                  <vacuum-actuator-name>N1_VAC</vacuum-actuator-name>
+                  <head-offsets units="Millimeters" x="-13.5259483846106" y="-46.62272698137741" z="0.0" rotation="0.0"/>
+                  <manual-nozzle-tip-change-location units="Millimeters" x="128.860063028858" y="-133.78996458847286" z="0.0" rotation="0.0"/>
+                  <vacuum-sense-actuator-name>N1_vac_sense</vacuum-sense-actuator-name>
+                  <vacuum-actuator-name>N1_vac_valve</vacuum-actuator-name>
                </nozzle>
                <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168fe78b98301464" axis-Y-id="AXS168fe78b9841e323" axis-Z-id="AXS168fe78b9848b9cd" axis-rotation-id="AXS168fe78b986be75d" id="N2" name="N2" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="TIP169c5e0d9fd78922" changer-enabled="false" nozzle-tip-changed-on-manual-feed="true" enable-dynamic-safe-z="false" blow-off-closing-valve="false" version="200" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
@@ -287,41 +287,47 @@
                      <string>TIP1733796f5b64cc56</string>
                      <string>TIP169c5e0d9fd78922</string>
                   </compatible-nozzle-tip-ids>
-                  <head-offsets units="Millimeters" x="16.398365711539753" y="-47.13852801325665" z="0.0" rotation="0.0"/>
-                  <manual-nozzle-tip-change-location units="Millimeters" x="185.771" y="-41.09" z="0.0" rotation="0.0"/>
-                  <vacuum-sense-actuator-name>N2_VAC</vacuum-sense-actuator-name>
-                  <vacuum-actuator-name>N2_VAC</vacuum-actuator-name>
+                  <head-offsets units="Millimeters" x="16.317348980762123" y="-47.09349903402561" z="0.0" rotation="0.0"/>
+                  <manual-nozzle-tip-change-location units="Millimeters" x="218.48671469230186" y="-135.3220270472823" z="0.0" rotation="0.0"/>
+                  <vacuum-sense-actuator-name>N2_vac_sense</vacuum-sense-actuator-name>
+                  <vacuum-actuator-name>N2_vac_valve</vacuum-actuator-name>
                </nozzle>
             </nozzles>
             <actuators>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="N1_VAC" name="N1_VAC" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV168fe78b90edce6a" coordinated-before-actuate="false" coordinated-after-actuate="false" coordinated-before-read="false" enabled-actuation="AssumeUnknown" homed-actuation="ActuateOff" disabled-actuation="ActuateOff" index="0">
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="N1_VAC" name="N1_vac_valve" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV168fe78b90edce6a" coordinated-before-actuate="false" coordinated-after-actuate="false" coordinated-before-read="false" enabled-actuation="AssumeUnknown" homed-actuation="ActuateOff" disabled-actuation="ActuateOff" index="0">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="N2_VAC" name="N2_VAC" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV168fe78b90edce6a" coordinated-before-actuate="false" coordinated-after-actuate="false" coordinated-before-read="false" enabled-actuation="AssumeUnknown" homed-actuation="ActuateOff" disabled-actuation="ActuateOff" index="1">
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="N2_VAC" name="N2_vac_valve" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV168fe78b90edce6a" coordinated-before-actuate="false" coordinated-after-actuate="false" coordinated-before-read="false" enabled-actuation="AssumeUnknown" homed-actuation="ActuateOff" disabled-actuation="ActuateOff" index="1">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="N1_VPUMP" name="N1_VPUMP" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV168fe78b90edce6a" coordinated-before-actuate="false" coordinated-after-actuate="false" coordinated-before-read="false" enabled-actuation="AssumeUnknown" homed-actuation="ActuateOff" disabled-actuation="ActuateOff" index="2">
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="N1_VPUMP" name="N1_vac_pump" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV168fe78b90edce6a" coordinated-before-actuate="false" coordinated-after-actuate="false" coordinated-before-read="false" enabled-actuation="AssumeUnknown" homed-actuation="ActuateOff" disabled-actuation="ActuateOff" index="2">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="N2_VPUMP" name="N2_VPUMP" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV168fe78b90edce6a" coordinated-before-actuate="false" coordinated-after-actuate="false" coordinated-before-read="false" enabled-actuation="AssumeUnknown" homed-actuation="ActuateOff" disabled-actuation="ActuateOff" index="3">
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="N2_VPUMP" name="N2_vac_pump" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV168fe78b90edce6a" coordinated-before-actuate="false" coordinated-after-actuate="false" coordinated-before-read="false" enabled-actuation="AssumeUnknown" homed-actuation="ActuateOff" disabled-actuation="ActuateOff" index="3">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                </actuator>
                <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT172fc09b1febc01d" name="TopCamLight" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV168fe78b90edce6a" coordinated-before-actuate="true" coordinated-after-actuate="true" coordinated-before-read="false" enabled-actuation="ActuateOff" homed-actuation="ActuateOff" disabled-actuation="ActuateOff" index="0">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT174dc80338a4c208" name="N1N2_VPUMP" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV168fe78b90edce6a" coordinated-before-actuate="false" coordinated-after-actuate="false" coordinated-before-read="false" enabled-actuation="LeaveAsIs" homed-actuation="LeaveAsIs" disabled-actuation="ActuateOff" index="0">
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT174dc80338a4c208" name="N1N2_vac_pumps" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV168fe78b90edce6a" coordinated-before-actuate="false" coordinated-after-actuate="false" coordinated-before-read="false" enabled-actuation="LeaveAsIs" homed-actuation="LeaveAsIs" disabled-actuation="ActuateOff" index="0">
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+               </actuator>
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT17cd028c059e0598" name="N1_vac_sense" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV168fe78b90edce6a" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+               </actuator>
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT17cd0293358556b0" name="N2_vac_sense" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV168fe78b90edce6a" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                </actuator>
             </actuators>
             <cameras>
                <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" axis-X-id="AXS168fe78b98301464" axis-Y-id="AXS168fe78b9841e323" axis-Z-id="AXS168fe78b983efbc5" axis-rotation-id="AXS168fe78b98408456" id="CAM169bbd89b67e63b5" name="TopCam" looking="Down" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="true" anti-glare-light-off="true" enable-units-per-pixel-3-d="true" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Euclidean" settle-time-ms="800" settle-timeout-ms="800" settle-threshold="1.0" settle-debounce="7" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="-0.0824124385110798" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.462809917355372" green-balance="1.120253164556962" blue-balance="1.0" red-gamma="1.153449911489355" green-gamma="0.9760936939199176" blue-gamma="0.8913874252279405" deinterlace="false" light-actuator-id="ACT172fc09b1febc01d" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="PP-TCAM \\?\usb#vid_1e45&amp;pid_8022&amp;mi_00#8&amp;a175740&amp;1&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" freeze-properties="false">
-                  <units-per-pixel units="Millimeters" x="0.020467384617507786" y="0.020584676219900382" z="-22.300000000000004" rotation="0.0"/>
-                  <units-per-pixel-secondary units="Millimeters" x="0.018269646546775833" y="0.01836145381585511" z="-17.80000000000001" rotation="0.0"/>
+                  <units-per-pixel units="Millimeters" x="0.020467384617507786" y="0.020584676219900382" z="-24.300000000000004" rotation="0.0"/>
+                  <units-per-pixel-secondary units="Millimeters" x="0.018269646546775833" y="0.01836145381585511" z="-19.200000000000017" rotation="0.0"/>
                   <camera-primary-z value="0.0" units="Millimeters"/>
                   <camera-secondary-z value="0.0" units="Millimeters"/>
-                  <default-z value="-22.300000000000004" units="Millimeters"/>
+                  <default-z value="-24.300000000000004" units="Millimeters"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <roaming-radius value="0.0" units="Millimeters"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -390,35 +396,17 @@
             </cameras>
             <park-location units="Millimeters" x="110.0" y="350.0" z="0.0" rotation="0.0"/>
             <soft-limits-enabled>false</soft-limits-enabled>
-            <pump-actuator-name>N1N2_VPUMP</pump-actuator-name>
+            <pump-actuator-name>N1N2_vac_pumps</pump-actuator-name>
             <homing-fiducial-location units="Millimeters" x="224.122864496866" y="271.32917349382564" z="0.0" rotation="0.0"/>
-            <calibration-primary-fiducial-location units="Millimeters" x="224.12018867654373" y="271.3344831194015" z="-22.300000000000004" rotation="0.0"/>
-            <calibration-secondary-fiducial-location units="Millimeters" x="223.82787433179533" y="301.1600493081509" z="-17.80000000000001" rotation="0.0"/>
+            <calibration-primary-fiducial-location units="Millimeters" x="224.12018867654373" y="271.3344831194015" z="-24.300000000000004" rotation="0.0"/>
+            <calibration-secondary-fiducial-location units="Millimeters" x="223.82787433179533" y="301.1600493081509" z="-19.200000000000017" rotation="0.0"/>
             <calibration-primary-fiducial-diameter value="1.923934154045732" units="Millimeters"/>
             <calibration-secondary-fiducial-diameter value="2.082739706332445" units="Millimeters"/>
-            <calibration-test-object-diameter value="7.49106277000785" units="Millimeters"/>
+            <calibration-test-object-diameter value="7.6138670777128965" units="Millimeters"/>
          </head>
       </heads>
       <signalers/>
       <feeders>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR174ba5e0b9995ba4" name="PPBF-AS1-N0" enabled="true" part-id="0603_LED_S1-À¶µÆ 0603" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="AutoFeeder_OK" actuator-value="0.0" post-pick-actuator-name="AutoFeeder_4mmAdvance" post-pick-actuator-value="0.0" move-before-feed="true">
-            <location units="Millimeters" x="21.919" y="292.617" z="-24.0" rotation="-90.0"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR174ba6124425bb24" name="PPBF-AS1-N1" enabled="true" part-id="" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="AutoFeeder_OK" actuator-value="1.0" post-pick-actuator-name="AutoFeeder_4mmAdvance" post-pick-actuator-value="1.0" move-before-feed="true">
-            <location units="Millimeters" x="22.305" y="108.1" z="-24.0" rotation="-90.0"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR174ba627067b4838" name="PPBF-AS1-N2" enabled="true" part-id="R0603-10K" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="AutoFeeder_OK" actuator-value="2.0" post-pick-actuator-name="AutoFeeder_4mmAdvance" post-pick-actuator-value="2.0" move-before-feed="true">
-            <location units="Millimeters" x="21.475" y="280.196" z="-24.0" rotation="-90.0"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR174ba6411da42e48" name="PPBF-AS1-N3" enabled="true" part-id="R0603-1K" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="AutoFeeder_OK" actuator-value="3.0" post-pick-actuator-name="AutoFeeder_4mmAdvance" post-pick-actuator-value="3.0" move-before-feed="true">
-            <location units="Millimeters" x="21.683" y="268.11" z="-24.0" rotation="-90.0"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR174ba65672b439cc" name="PPBF-AS1-N4" enabled="true" part-id="R0603-100R" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="AutoFeeder_OK" actuator-value="4.0" post-pick-actuator-name="AutoFeeder_4mmAdvance" post-pick-actuator-value="4.0" move-before-feed="true">
-            <location units="Millimeters" x="22.266" y="256.042" z="-24.0" rotation="-90.0"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR174ba67a2bc94218" name="PPBF-AS1-N5" enabled="true" part-id="R0603-0R" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="AutoFeeder_OK" actuator-value="5.0" post-pick-actuator-name="AutoFeeder_4mmAdvance" post-pick-actuator-value="5.0" move-before-feed="true">
-            <location units="Millimeters" x="21.056" y="243.595" z="-24.0" rotation="-90.0"/>
-         </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR174d2951d599e7d8" name="PP-SF-01" enabled="true" part-id="CE-6.6X6.6AX-100uF 35V" retry-count="3" feed-retry-count="1" pick-retry-count="0" tape-type="ClearPlastic" standard-eia-481="true" vision-enabled="true" feed-count="0" max-feed-count="16">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="90.0"/>
             <reference-hole-location units="Millimeters" x="77.625" y="121.262" z="-22.0" rotation="0.0"/>
@@ -445,29 +433,34 @@
             <location units="Millimeters" x="77.285" y="-5.921" z="-23.9" rotation="0.0"/>
             <offsets units="Millimeters" x="13.6" y="0.0" z="0.0" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR175881767232a080" name="AS1-8mm-N300" enabled="true" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="AutoFeeder_OK" actuator-value="300.0" post-pick-actuator-name="AutoFeeder_4mmAdvance" post-pick-actuator-value="300.0" move-before-feed="true">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb9fa1bf676c" name="BBAF1.1-100" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="BambooFeeder_AS1.1" feed-actuator-value="100.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="19.2" y="152.5" z="-23.4" rotation="0.0"/>
+            <hole-1-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <hole-2-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <part-pitch value="2.0" units="Millimeters"/>
+            <feed-pitch value="4.0" units="Millimeters"/>
+            <pipeline>
+               <stages>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="true" settle-option="Settle" count="1"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb0" enabled="false" prefix="push_pull_" suffix=".png"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="1" enabled="true" kernel-size="5" property-name="BlurGaussian"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.AffineWarp" name="2" enabled="true" length-unit="Millimeters" x-0="0.0" y-0="0.0" x-1="0.0" y-1="0.0" x-2="0.0" y-2="0.0" scale="1.0" rectify="true" region-of-interest-property="regionOfInterest"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="3" enabled="true" conversion="Bgr2Gray"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="5" enabled="true" image-stage-name="0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCircularSymmetry" name="results" enabled="true" min-diameter="10" max-diameter="100" max-distance="100" search-width="0" search-height="0" max-target-count="10" min-symmetry="1.2" corr-symmetry="0.2" outer-margin="0.3" inner-margin="0.1" sub-sampling="8" super-sampling="1" symmetry-score="RingMedianVarianceVsRingVarianceSum" property-name="sprocketHole" diagnostics="false" heat-map="false"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="7" enabled="false" image-stage-name="0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="8" enabled="false" circles-stage-name="results" thickness="1">
+                     <color r="255" g="0" b="0" a="255"/>
+                  </cv-stage>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="push_pull_result_" suffix=".png"/>
+               </stages>
+            </pipeline>
+            <precision-wanted value="0.1" units="Millimeters"/>
+            <sum-of-errors value="0.0" units="Millimeters"/>
+            <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17588182e7c16f00" name="AS1-8mm-N301" enabled="true" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="AutoFeeder_OK" actuator-value="301.0" post-pick-actuator-name="AutoFeeder_4mmAdvance" post-pick-actuator-value="301.0" move-before-feed="true">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17588188dd00c704" name="AS1-8mm-N302" enabled="true" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="AutoFeeder_OK" actuator-value="302.0" post-pick-actuator-name="AutoFeeder_4mmAdvance" post-pick-actuator-value="302.0" move-before-feed="true">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR1758818dd077212c" name="AS1-8mm-N303" enabled="true" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="AutoFeeder_OK" actuator-value="303.0" post-pick-actuator-name="AutoFeeder_4mmAdvance" post-pick-actuator-value="303.0" move-before-feed="true">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceSlotAutoFeeder" version="1.1" id="SLOT-17c17fe5dc24b4e8" name="Slot-Front-1" enabled="true" part-id="" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="AutoFeeder_4mmAdvance" actuator-value="312.0" post-pick-actuator-name="AutoFeeder_PostPick" post-pick-actuator-value="312.0" move-before-feed="false" bank-id="BANK-1567926390434" feeder-id="SLOTFDR-17c17fe84c200110">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceSlotAutoFeeder" version="1.1" id="SLOT-17c180378c1f72d8" name="Slot-Front-2" enabled="false" part-id="" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="AutoFeeder_4mmAdvance" actuator-value="0.0" post-pick-actuator-name="AutoFeeder_PostPick" post-pick-actuator-value="0.0" move-before-feed="false" bank-id="BANK-1567926390434" feeder-id="SLOTFDR-17c1802af72c9b58">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceSlotAutoFeeder" version="1.1" id="SLOT-17c1804c97943198" name="Slot-Right-0" enabled="false" part-id="" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-value="0.0" post-pick-actuator-value="0.0" move-before-feed="false" bank-id="BANK-17c1804562db82b4">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17c8784e2f495518" name="Position 110" enabled="true" part-id="R0402-1K" retry-count="3" feed-retry-count="3" pick-retry-count="2" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="BambooFeeder_AS1.1" feed-actuator-value="110.0" post-pick-actuator-value="0.0" move-before-feed="false">
-            <location units="Millimeters" x="18.09943612911492" y="16.22112198188463" z="-21.4" rotation="-0.2808594146833496"/>
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17c8784e2f495518" name="BBAF1.1-101" enabled="true" part-id="-CVS-01TB" retry-count="3" feed-retry-count="3" pick-retry-count="2" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="BambooFeeder_AS1.1" feed-actuator-value="101.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="19.2" y="140.0" z="-23.4" rotation="-0.2808594146833496"/>
             <hole-1-location units="Millimeters" x="18.11659278573072" y="19.721079931508278" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="22.116544728157745" y="19.701472323947364" z="0.0" rotation="-0.0"/>
             <part-pitch value="2.0" units="Millimeters"/>
@@ -492,11 +485,11 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbba49edae25e8" name="Position 109" enabled="true" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="109.0" post-pick-actuator-value="0.0" move-before-feed="false">
-            <location units="Millimeters" x="20.087824480394147" y="28.853469636048473" z="-21.4" rotation="-0.5589654808320923"/>
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbba49edae25e8" name="BBAF1.1-102" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="BambooFeeder_AS1.1" feed-actuator-value="102.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="19.2" y="127.5" z="-23.4" rotation="-0.5589654808320923"/>
             <hole-1-location units="Millimeters" x="18.122064371570115" y="32.37281434700762" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="22.121874022279055" y="32.333791813829976" z="0.0" rotation="-0.0"/>
-            <part-pitch value="4.0" units="Millimeters"/>
+            <part-pitch value="2.0" units="Millimeters"/>
             <feed-pitch value="4.0" units="Millimeters"/>
             <pipeline>
                <stages>
@@ -518,10 +511,10 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbaa2d345e2c8" name="Position 108" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="108.0" post-pick-actuator-value="0.0" move-before-feed="false">
-            <location units="Millimeters" x="20.08133025597079" y="41.34645808489519" z="-21.4" rotation="-0.5589654808320923"/>
-            <hole-1-location units="Millimeters" x="18.11557014714676" y="44.865802795854336" z="-0.0" rotation="-0.0"/>
-            <hole-2-location units="Millimeters" x="22.1153797978557" y="44.82678026267669" z="0.0" rotation="-0.0"/>
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbaa2d345e2c8" name="BBAF1.1-103" enabled="true" part-id="C0603-1uF" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="1" pipeline-type="CircularSymmetry" calibration-count="1" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="BambooFeeder_AS1.1" feed-actuator-value="103.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="20.381782696294124" y="114.3779763243617" z="-23.4" rotation="0.27283498306812864"/>
+            <hole-1-location units="Millimeters" x="18.365138893940042" y="117.86841294095093" z="-0.0" rotation="0.0"/>
+            <hole-2-location units="Millimeters" x="22.365093543237386" y="117.88746034404282" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-pitch value="4.0" units="Millimeters"/>
             <pipeline>
@@ -541,14 +534,14 @@
                </stages>
             </pipeline>
             <precision-wanted value="0.1" units="Millimeters"/>
-            <sum-of-errors value="0.0" units="Millimeters"/>
-            <sum-of-error-squares value="0.0" units="Millimeters"/>
+            <sum-of-errors value="0.2043263767691217" units="Millimeters"/>
+            <sum-of-error-squares value="0.04174926824359707" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbac40ae03e9c" name="Position 107" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="107.0" post-pick-actuator-value="0.0" move-before-feed="false">
-            <location units="Millimeters" x="20.08631870481751" y="53.76545038412634" z="-21.4" rotation="-0.5589654808320923"/>
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbac40ae03e9c" name="BBAF1.1-104" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="BambooFeeder_AS1.1" feed-actuator-value="104.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="19.2" y="102.5" z="-23.4" rotation="-0.5589654808320923"/>
             <hole-1-location units="Millimeters" x="18.12055859599348" y="57.284795095085485" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="22.12036824670242" y="57.24577256190784" z="0.0" rotation="-0.0"/>
-            <part-pitch value="4.0" units="Millimeters"/>
+            <part-pitch value="2.0" units="Millimeters"/>
             <feed-pitch value="4.0" units="Millimeters"/>
             <pipeline>
                <stages>
@@ -570,11 +563,11 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbae04df91110" name="Position 106" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="106.0" post-pick-actuator-value="0.0" move-before-feed="false">
-            <location units="Millimeters" x="20.058361059046195" y="66.29845808489519" z="-21.4" rotation="-0.5589654808321969"/>
-            <hole-1-location units="Millimeters" x="18.092600950222167" y="69.81780279585433" z="-0.0" rotation="-0.0"/>
-            <hole-2-location units="Millimeters" x="22.092410600931107" y="69.77878026267669" z="0.0" rotation="-0.0"/>
-            <part-pitch value="4.0" units="Millimeters"/>
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbae04df91110" name="BBAF1.1-105" enabled="true" part-id="C0402-100nF" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="3" pipeline-type="CircularSymmetry" calibration-count="2" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="BambooFeeder_AS1.1" feed-actuator-value="105.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="19.2" y="89.56726409281269" z="-23.4" rotation="-0.5562522270807472"/>
+            <hole-1-location units="Millimeters" x="18.32037203445695" y="93.06709915018907" z="-0.0" rotation="-0.0"/>
+            <hole-2-location units="Millimeters" x="22.32018352860138" y="93.02826602888668" z="0.0" rotation="-0.0"/>
+            <part-pitch value="2.0" units="Millimeters"/>
             <feed-pitch value="4.0" units="Millimeters"/>
             <pipeline>
                <stages>
@@ -593,14 +586,14 @@
                </stages>
             </pipeline>
             <precision-wanted value="0.1" units="Millimeters"/>
-            <sum-of-errors value="0.0" units="Millimeters"/>
-            <sum-of-error-squares value="0.0" units="Millimeters"/>
+            <sum-of-errors value="0.07254972841799023" units="Millimeters"/>
+            <sum-of-error-squares value="0.0026775065144350654" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbafcad9052e8" name="Position 105" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="105.0" post-pick-actuator-value="0.0" move-before-feed="false">
-            <location units="Millimeters" x="20.023245547513408" y="78.80993690778084" z="-21.4" rotation="-0.5589654808319878"/>
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbafcad9052e8" name="BBAF1.1-106" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="BambooFeeder_AS1.1" feed-actuator-value="106.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="19.2" y="77.74" z="-23.4" rotation="-0.5589654808319878"/>
             <hole-1-location units="Millimeters" x="18.05748543868937" y="82.32928161873998" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="22.057295089398316" y="82.29025908556234" z="0.0" rotation="-0.0"/>
-            <part-pitch value="4.0" units="Millimeters"/>
+            <part-pitch value="2.0" units="Millimeters"/>
             <feed-pitch value="4.0" units="Millimeters"/>
             <pipeline>
                <stages>
@@ -622,11 +615,11 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb0de0e12cc4" name="Position 104" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="104.0" post-pick-actuator-value="0.0" move-before-feed="false">
-            <location units="Millimeters" x="20.02025709866669" y="91.28144268335748" z="-21.4" rotation="-0.5589654808319878"/>
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb0de0e12cc4" name="BBAF1.1-107" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="BambooFeeder_AS1.1" feed-actuator-value="107.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="19.2" y="65.24" z="-23.4" rotation="-0.5589654808319878"/>
             <hole-1-location units="Millimeters" x="18.05449698984265" y="94.80078739431663" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="22.054306640551598" y="94.76176486113899" z="0.0" rotation="-0.0"/>
-            <part-pitch value="4.0" units="Millimeters"/>
+            <part-pitch value="2.0" units="Millimeters"/>
             <feed-pitch value="4.0" units="Millimeters"/>
             <pipeline>
                <stages>
@@ -648,11 +641,11 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb1edd6fd8b8" name="Position 103" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="103.0" post-pick-actuator-value="0.0" move-before-feed="false">
-            <location units="Millimeters" x="20.00785528346956" y="103.84545038412634" z="-21.4" rotation="-0.5589654808321969"/>
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb1edd6fd8b8" name="BBAF1.1-108" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="BambooFeeder_AS1.1" feed-actuator-value="108.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="19.2" y="52.74" z="-23.4" rotation="-0.5589654808321969"/>
             <hole-1-location units="Millimeters" x="18.04209517464553" y="107.36479509508548" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="22.04190482535447" y="107.32577256190784" z="0.0" rotation="-0.0"/>
-            <part-pitch value="4.0" units="Millimeters"/>
+            <part-pitch value="2.0" units="Millimeters"/>
             <feed-pitch value="4.0" units="Millimeters"/>
             <pipeline>
                <stages>
@@ -674,11 +667,11 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb33b1400168" name="Position 102" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="102.0" post-pick-actuator-value="0.0" move-before-feed="false">
-            <location units="Millimeters" x="19.91520683740842" y="116.68995760915357" z="-21.4" rotation="-1.1178245823861845"/>
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb33b1400168" name="BBAF1.1-109" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="BambooFeeder_AS1.1" feed-actuator-value="109.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="19.2" y="40.24" z="-23.4" rotation="-1.1178245823861845"/>
             <hole-1-location units="Millimeters" x="17.983867140733388" y="120.22830849283471" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="21.98310590657563" y="120.15027456569632" z="0.0" rotation="-0.0"/>
-            <part-pitch value="4.0" units="Millimeters"/>
+            <part-pitch value="2.0" units="Millimeters"/>
             <feed-pitch value="4.0" units="Millimeters"/>
             <pipeline>
                <stages>
@@ -700,11 +693,11 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb4fb94a8394" name="Position 101" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="101.0" post-pick-actuator-value="0.0" move-before-feed="false">
-            <location units="Millimeters" x="19.952773017018714" y="128.7023485719399" z="-21.4" rotation="-0.2794893905449689"/>
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb4fb94a8394" name="BBAF1.1-110" enabled="true" part-id="R0402-1K" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="BambooFeeder_AS1.1" feed-actuator-value="110.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="19.2" y="27.74" z="-23.4" rotation="-0.2794893905449689"/>
             <hole-1-location units="Millimeters" x="17.969869779558188" y="132.21206291229134" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="21.96982218968769" y="132.1925509493151" z="0.0" rotation="-0.0"/>
-            <part-pitch value="4.0" units="Millimeters"/>
+            <part-pitch value="2.0" units="Millimeters"/>
             <feed-pitch value="4.0" units="Millimeters"/>
             <pipeline>
                <stages>
@@ -726,11 +719,11 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb6b0f7e0d10" name="Position 100" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="100.0" post-pick-actuator-value="0.0" move-before-feed="false">
-            <location units="Millimeters" x="19.920796119325274" y="141.37378889098133" z="-21.4" rotation="-0.2794893905449689"/>
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb6b0f7e0d10" name="BBAF1.1-111" enabled="true" part-id="R0402-0R" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="BambooFeeder_AS1.1" feed-actuator-value="111.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="19.2" y="15.24" z="-23.4" rotation="-0.2794893905449689"/>
             <hole-1-location units="Millimeters" x="17.937892881864748" y="144.88350323133278" z="-0.0" rotation="-0.0"/>
             <hole-2-location units="Millimeters" x="21.93784529199425" y="144.86399126835653" z="0.0" rotation="-0.0"/>
-            <part-pitch value="4.0" units="Millimeters"/>
+            <part-pitch value="2.0" units="Millimeters"/>
             <feed-pitch value="4.0" units="Millimeters"/>
             <pipeline>
                <stages>
@@ -752,11 +745,11 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb89b340f0e8" name="Position 111" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="111.0" post-pick-actuator-value="0.0" move-before-feed="false">
-            <location units="Millimeters" x="19.835303028857904" y="3.6795576295980066" z="-21.4" rotation="-0.2794893905447337"/>
-            <hole-1-location units="Millimeters" x="17.852399791397364" y="7.1892719699494405" z="-0.0" rotation="-0.0"/>
-            <hole-2-location units="Millimeters" x="21.852352201526866" y="7.1697600069732" z="0.0" rotation="-0.0"/>
-            <part-pitch value="4.0" units="Millimeters"/>
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb89b340f0e8" name="BBAF1.1-112" enabled="true" part-id="R0402-10K" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="4" pipeline-type="CircularSymmetry" calibration-count="2" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="BambooFeeder_AS1.1" feed-actuator-value="112.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="17.8304021102" y="2.1475557224402118" z="-23.4" rotation="-0.27678905217775973"/>
+            <hole-1-location units="Millimeters" x="17.847310125463874" y="5.647514882061912" z="-0.0" rotation="0.0"/>
+            <hole-2-location units="Millimeters" x="21.847263450745817" y="5.628191436046056" z="0.0" rotation="0.0"/>
+            <part-pitch value="2.0" units="Millimeters"/>
             <feed-pitch value="4.0" units="Millimeters"/>
             <pipeline>
                <stages>
@@ -775,34 +768,8 @@
                </stages>
             </pipeline>
             <precision-wanted value="0.1" units="Millimeters"/>
-            <sum-of-errors value="0.0" units="Millimeters"/>
-            <sum-of-error-squares value="0.0" units="Millimeters"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbb9fa1bf676c" name="Position 112" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="20" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-name="AutoFeeder_4mmAdvance" feed-actuator-value="112.0" post-pick-actuator-value="0.0" move-before-feed="false">
-            <location units="Millimeters" x="0.0" y="0.0" z="-21.4" rotation="0.0"/>
-            <hole-1-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <hole-2-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <part-pitch value="4.0" units="Millimeters"/>
-            <feed-pitch value="4.0" units="Millimeters"/>
-            <pipeline>
-               <stages>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="true" settle-option="Settle" count="1"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb0" enabled="false" prefix="push_pull_" suffix=".png"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="1" enabled="true" kernel-size="5" property-name="BlurGaussian"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.AffineWarp" name="2" enabled="true" length-unit="Millimeters" x-0="0.0" y-0="0.0" x-1="0.0" y-1="0.0" x-2="0.0" y-2="0.0" scale="1.0" rectify="true" region-of-interest-property="regionOfInterest"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="3" enabled="true" conversion="Bgr2Gray"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="5" enabled="true" image-stage-name="0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCircularSymmetry" name="results" enabled="true" min-diameter="10" max-diameter="100" max-distance="100" search-width="0" search-height="0" max-target-count="10" min-symmetry="1.2" corr-symmetry="0.2" outer-margin="0.3" inner-margin="0.1" sub-sampling="8" super-sampling="1" symmetry-score="RingMedianVarianceVsRingVarianceSum" property-name="sprocketHole" diagnostics="false" heat-map="false"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="7" enabled="false" image-stage-name="0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="8" enabled="false" circles-stage-name="results" thickness="1">
-                     <color r="255" g="0" b="0" a="255"/>
-                  </cv-stage>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="push_pull_result_" suffix=".png"/>
-               </stages>
-            </pipeline>
-            <precision-wanted value="0.1" units="Millimeters"/>
-            <sum-of-errors value="0.0" units="Millimeters"/>
-            <sum-of-error-squares value="0.0" units="Millimeters"/>
+            <sum-of-errors value="0.19554803555554182" units="Millimeters"/>
+            <sum-of-error-squares value="0.026775065144348284" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR17cbbda4270c33b8" name="BambooFeederAutoVision" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="ColorKeyed" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-value="0.0" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -899,18 +866,18 @@
          </feeder>
       </feeders>
       <cameras>
-         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM168fec7286d47a94" name="BottomCam" looking="Up" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="false" after-capture-light-off="true" anti-glare-light-off="true" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Euclidean" settle-time-ms="360" settle-timeout-ms="600" settle-threshold="0.4" settle-debounce="4" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.5222488889310395" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="UpCamLights" allow-machine-actuators="false" focus-sensing-method="AutoFocus" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="PP-BCAM \\?\usb#vid_1e45&amp;pid_8022&amp;mi_00#8&amp;3371bb55&amp;1&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" freeze-properties="false">
-            <units-per-pixel units="Millimeters" x="0.046448557485563396" y="0.046416916778829365" z="0.0" rotation="0.0"/>
-            <camera-primary-z value="-17.360000000000003" units="Millimeters"/>
+         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM168fec7286d47a94" name="BottomCam" looking="Up" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="false" after-capture-light-off="true" anti-glare-light-off="true" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Euclidean" settle-time-ms="360" settle-timeout-ms="600" settle-threshold="0.4" settle-debounce="4" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.5120523747058634" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="UpCamLights" allow-machine-actuators="false" focus-sensing-method="AutoFocus" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="PP-BCAM \\?\usb#vid_1e45&amp;pid_8022&amp;mi_00#8&amp;3371bb55&amp;1&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" freeze-properties="false">
+            <units-per-pixel units="Millimeters" x="0.04987030687893515" y="0.061124001889648207" z="0.0" rotation="0.0"/>
+            <camera-primary-z value="-21.206666666666678" units="Millimeters"/>
             <default-z value="-17.360000000000003" units="Millimeters"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
             <roaming-radius value="0.0" units="Millimeters"/>
-            <head-offsets units="Millimeters" x="169.0656967282571" y="286.8247160305057" z="-17.360000000000003" rotation="180.0"/>
+            <head-offsets units="Millimeters" x="169.0328882259754" y="286.800480135146" z="-21.206666666666678" rotation="180.0"/>
             <calibration enabled="false">
                <camera-matrix length="9">9.346091108988578E-307, 1.8914689616002572E-307, 1.3351156152922956E-306, 1.6022107174758402E-306, 1.6022039271100292E-306, 1.4241993754499044E-306, 7.566038813812667E-307, 8.456034403107055E-307, 1.3795974003311377E-306</camera-matrix>
                <distortion-coefficients length="5">8.344268880872532E-308, 8.344230683976861E-308, 1.0013239793338737E-307, 2.2252313956819488E-306, 9.457081678709974E-308</distortion-coefficients>
             </calibration>
-            <advanced-calibration enabled="true" overriding-old-transforms-and-distortion-correction-settings="true" valid="true" data-available="true" alpha-percent="0" rotation-error-z="-0.4229835199626007" rotation-error-y="-2.400302755134092" rotation-error-x="-0.0861134565278264" rms-error="7.833447558790485" desired-radial-lines-per-test-pattern="32" test-pattern-fill-fraction="0.9" walking-loop-gain="0.5" approximate-camera-f="1452.8359653173616" mirrored="1.0" apparent-motion-direction="1.0" width-fov="46.393424264052314" height-fov="27.147494617201268" virtual-width-fov="40.976526406245554" virtual-height-fov="26.5341612195568" disable-tilt-correction="false" disable-distortion-correction="false" disable-tangential-distortion-correction="true" version="1.5" raw-cropped-image-width="1280" raw-cropped-image-height="720">
+            <advanced-calibration enabled="true" overriding-old-transforms-and-distortion-correction-settings="false" valid="true" data-available="true" alpha-percent="0" rotation-error-z="-0.4229835199626007" rotation-error-y="-2.400302755134092" rotation-error-x="-0.0861134565278264" rms-error="7.833447558790485" desired-radial-lines-per-test-pattern="32" test-pattern-fill-fraction="0.9" walking-loop-gain="0.5" approximate-camera-f="1452.8359653173616" mirrored="1.0" apparent-motion-direction="1.0" width-fov="46.393424264052314" height-fov="27.147494617201268" virtual-width-fov="40.976526406245554" virtual-height-fov="26.5341612195568" disable-tilt-correction="false" disable-distortion-correction="false" disable-tangential-distortion-correction="true" version="1.5" raw-cropped-image-width="1280" raw-cropped-image-height="720">
                <camera-matrix length="9">1493.4684178085765, 0.0, 639.5, 0.0, 1491.0504222454272, 359.5, 0.0, 0.0, 1.0</camera-matrix>
                <distortion-coefficients length="5">-1.4604849091961973, 25.25675508752612, 0.0, 0.0, -111.54634751113511</distortion-coefficients>
                <pipeline>
@@ -1029,6 +996,9 @@
          <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT17c90f69f8376ad4" name="BambooFeeder_AS1.1" value-type="Double" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV169bbf32d8c55aec" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </actuator>
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT17ccf5aa2567a990" name="Home X&amp;Y" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV168fe78b90edce6a" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         </actuator>
       </actuators>
       <part-alignments>
          <part-alignment class="org.openpnp.machine.reference.vision.ReferenceBottomVision" bottom-vision-id="BVS_Stock_R" enabled="true" pre-rotate="true" max-vision-passes="3" max-angular-offset="15.0" test-alignment-angle="45.0">
@@ -1041,8 +1011,8 @@
             <tcp line-ending-type="LF" ip-address="127.0.0.1" port="23" name="TcpCommunications"/>
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <detected-firmware><![CDATA[FIRMWARE_NAME:Marlin 2.1.1 (Nov  5 2023 13:55:56) SOURCE_CODE_URL:github.com/MarlinFirmware/Marlin PROTOCOL_VERSION:1.0 MACHINE_TYPE:Pandaplacer A1 EXTRUDER_COUNT:2 AXIS_COUNT:5 UUID:80482c2b-784e-46ca-9a09-680bbde818dd]]></detected-firmware>
-            <reported-axes><![CDATA[X:224.057 Y:272.142 Z:0.000 A:0.000 B:0.000 E:0.000 Count X:35844 Y:43552 Z:820 A:0 B:0]]></reported-axes>
+            <detected-firmware><![CDATA[FIRMWARE_NAME:Marlin 2.1.1 (Feb 20 2024 15:29:17) SOURCE_CODE_URL:github.com/MarlinFirmware/Marlin PROTOCOL_VERSION:1.0 MACHINE_TYPE:Pandaplacer A1 EXTRUDER_COUNT:2 AXIS_COUNT:5 UUID:80482c2b-784e-46ca-9a09-680bbde818dd]]></detected-firmware>
+            <reported-axes><![CDATA[X:224.251 Y:270.913 Z:0.000 A:0.000 B:0.000 E:0.000 Count X:35901 Y:43412 Z:820 A:0 B:0]]></reported-axes>
             <command type="COMMAND_CONFIRM_REGEX">
                <text><![CDATA[^ok.*]]></text>
             </command>
@@ -1101,24 +1071,13 @@
                <text><![CDATA[^error.*]]></text>
             </command>
             <command head-mountable-id="N1_VAC" type="ACTUATE_BOOLEAN_COMMAND">
-               <text><![CDATA[M106 P0 S{True:180}{False:0} ; vac_valve-A on/of]]></text>
-               <text><![CDATA[M105;]]></text>
-               <text><![CDATA[M105;]]></text>
+               <text><![CDATA[M106 P0 S{True:180}{False:0} ; vac_valve-A on/off]]></text>
             </command>
             <command head-mountable-id="N2_VAC" type="ACTUATE_BOOLEAN_COMMAND">
-               <text><![CDATA[M106 P1 S{True:180}{False:0} ; vac_valve-B on/of]]></text>
-            </command>
-            <command head-mountable-id="N1_VAC" type="ACTUATOR_READ_COMMAND">
-               <text><![CDATA[M105;]]></text>
+               <text><![CDATA[M106 P1 S{True:180}{False:0} ; vac_valve-B on/off]]></text>
             </command>
             <command head-mountable-id="N1_VAC" type="ACTUATOR_READ_REGEX">
                <text><![CDATA[^ok.*T0:(?<Value>-?\d+\.\d+).*T1:.*]]></text>
-            </command>
-            <command head-mountable-id="N2_VAC" type="ACTUATOR_READ_COMMAND">
-               <text><![CDATA[M105;]]></text>
-            </command>
-            <command head-mountable-id="N2_VAC" type="ACTUATOR_READ_REGEX">
-               <text><![CDATA[^ok.*T1:(?<Value>-?\d+\.\d+).*]]></text>
             </command>
             <command type="MOVE_TO_COMPLETE_COMMAND">
                <text><![CDATA[M400 ; Wait for moves to complete before returning]]></text>
@@ -1201,11 +1160,31 @@
                <text><![CDATA[M300 P375 S0]]></text>
                <text><![CDATA[M300 P149 S392; MUSIC END}]]></text>
             </command>
+            <command head-mountable-id="ACT17ccf5aa2567a990" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[M84; Disable motors]]></text>
+               <text><![CDATA[G4 P1000; Pause 1.0s]]></text>
+               <text><![CDATA[M204 S1000; Set homing acceleration]]></text>
+               <text><![CDATA[G28 X Y; Homing X Y]]></text>
+               <text><![CDATA[M400; Finish moves]]></text>
+               <text><![CDATA[M114; Report redefined position]]></text>
+            </command>
+            <command head-mountable-id="ACT17cd028c059e0598" type="ACTUATOR_READ_COMMAND">
+               <text><![CDATA[M105;]]></text>
+            </command>
+            <command head-mountable-id="ACT17cd0293358556b0" type="ACTUATOR_READ_COMMAND">
+               <text><![CDATA[M105;]]></text>
+            </command>
+            <command head-mountable-id="ACT17cd028c059e0598" type="ACTUATOR_READ_REGEX">
+               <text><![CDATA[^ok.*T0:(?<Value>-?\d+\.\d+).*]]></text>
+            </command>
+            <command head-mountable-id="ACT17cd0293358556b0" type="ACTUATOR_READ_REGEX">
+               <text><![CDATA[^ok.*T1:(?<Value>-?\d+\.\d+).*]]></text>
+            </command>
             <send-on-change-feed-rate send-on-change="false" relative-deviation="0.001" variable="FeedRate"/>
             <send-on-change-acceleration send-on-change="false" relative-deviation="0.001" variable="Acceleration"/>
             <send-on-change-jerk send-on-change="false" relative-deviation="0.001" variable="Jerk"/>
          </driver>
-         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV169bbf32d8c55aec" name="slot feeder 2.0" motion-control-type="ToolpathFeedRate" communications="serial" connection-keep-alive="false" sync-initial-location="false" allow-unhomed-motion="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="15000" connect-wait-time-milliseconds="5000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="true" compress-gcode="false" compression-excludes="[]&quot;" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
+         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV169bbf32d8c55aec" name="BambooFeeder 2.0" motion-control-type="ToolpathFeedRate" communications="serial" connection-keep-alive="false" sync-initial-location="false" allow-unhomed-motion="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="15000" connect-wait-time-milliseconds="5000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="true" compress-gcode="false" compression-excludes="[]&quot;" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
             <serial line-ending-type="LF" port-name="COM5" baud="19200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
             <tcp line-ending-type="LF" ip-address="127.0.0.1" port="24" name="TcpCommunications"/>
             <simulated line-ending-type="LF"/>
@@ -1385,7 +1364,7 @@
             <max-part-diameter value="20.0" units="Millimeters"/>
             <max-part-height value="10.0" units="Millimeters"/>
             <max-pick-tolerance value="0.4" units="Millimeters"/>
-            <calibration angle-subdivisions="6" allow-misdetections="0" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChange" background-calibration-method="Brightness" background-min-hue="0" background-max-hue="255" background-tol-hue="8" background-min-saturation="0" background-max-saturation="255" background-tol-saturation="8" background-min-value="0" background-max-value="209" background-tol-value="8" background-diagnostics="&lt;html&gt;Background elements are too bright.&lt;br/&gt;Try to eliminate highlights and reflections.&lt;br/&gt;Use a shade behind the nozzle.&lt;br/&gt;Renew the blackening of dark parts of the nozzle tip.&lt;br/&gt;Clean the nozzle tip. If it is shiny, make it dull.&lt;br/&gt;Eliminate light sources that reflect on the nozzle tip.&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
+            <calibration angle-subdivisions="6" allow-misdetections="2" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChange" background-calibration-method="Brightness" background-min-hue="0" background-max-hue="255" background-tol-hue="8" background-min-saturation="0" background-max-saturation="255" background-tol-saturation="8" background-min-value="0" background-max-value="209" background-tol-value="8" background-diagnostics="&lt;html&gt;Background elements are too bright.&lt;br/&gt;Try to eliminate highlights and reflections.&lt;br/&gt;Use a shade behind the nozzle.&lt;br/&gt;Renew the blackening of dark parts of the nozzle tip.&lt;br/&gt;Clean the nozzle tip. If it is shiny, make it dull.&lt;br/&gt;Eliminate light sources that reflect on the nozzle tip.&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
                <pipeline>
                   <stages>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="false" settle-option="Settle" count="1">
@@ -1401,16 +1380,11 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="runout_calibration_result_" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap">
-                  <entry>
-                     <string>N1</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.2517290423709063" center-y="-0.05923036291080149" radius="0.04134004764837949" phase-shift="-59.03624346792647" units="Millimeters" peak-error="0.030285551309751226" rms-error="0.017776066184290378"/>
-                  </entry>
-               </runout-compensation-lookup>
+               <runout-compensation-lookup class="java.util.HashMap"/>
                <minimum-detail-size value="0.2" units="Millimeters"/>
                <offset-threshold-length value="0.5" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
-               <calibration-tip-diameter value="0.46448557485563396" units="Millimeters"/>
+               <calibration-tip-diameter value="0.6981842963050922" units="Millimeters"/>
             </calibration>
             <method-part-on>Absolute</method-part-on>
             <part-on-check-after-pick>false</part-on-check-after-pick>
@@ -1447,7 +1421,7 @@
             <max-part-diameter value="20.0" units="Millimeters"/>
             <max-part-height value="10.0" units="Millimeters"/>
             <max-pick-tolerance value="0.4" units="Millimeters"/>
-            <calibration angle-subdivisions="6" allow-misdetections="2" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChange" background-calibration-method="Brightness" background-min-hue="0" background-max-hue="255" background-tol-hue="8" background-min-saturation="0" background-max-saturation="255" background-tol-saturation="8" background-min-value="0" background-max-value="168" background-tol-value="8" background-diagnostics="&lt;html&gt;Background elements are too bright.&lt;br/&gt;Try to eliminate highlights and reflections.&lt;br/&gt;Use a shade behind the nozzle.&lt;br/&gt;Renew the blackening of dark parts of the nozzle tip.&lt;br/&gt;Clean the nozzle tip. If it is shiny, make it dull.&lt;br/&gt;Eliminate light sources that reflect on the nozzle tip.&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
+            <calibration angle-subdivisions="6" allow-misdetections="2" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChange" background-calibration-method="Brightness" background-min-hue="0" background-max-hue="255" background-tol-hue="8" background-min-saturation="0" background-max-saturation="255" background-tol-saturation="8" background-min-value="0" background-max-value="185" background-tol-value="8" background-diagnostics="&lt;html&gt;Background elements are too bright.&lt;br/&gt;Try to eliminate highlights and reflections.&lt;br/&gt;Use a shade behind the nozzle.&lt;br/&gt;Renew the blackening of dark parts of the nozzle tip.&lt;br/&gt;Clean the nozzle tip. If it is shiny, make it dull.&lt;br/&gt;Eliminate light sources that reflect on the nozzle tip.&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
                <pipeline>
                   <stages>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="false" settle-option="Settle" count="1">
@@ -1463,12 +1437,7 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="runout_calibration_result_" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap">
-                  <entry>
-                     <string>N2</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="0.16288349800470409" center-y="-0.08884554436620223" radius="0.02756003176558632" phase-shift="90.00000000000001" units="Millimeters" peak-error="0.015743975155768627" rms-error="0.012976489023171507"/>
-                  </entry>
-               </runout-compensation-lookup>
+               <runout-compensation-lookup class="java.util.HashMap"/>
                <minimum-detail-size value="0.2" units="Millimeters"/>
                <offset-threshold-length value="2.0" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
@@ -1749,7 +1718,7 @@
       <unsafe-Z-roaming-distance value="12.0" units="Millimeters"/>
       <pool-scripting-engines>false</pool-scripting-engines>
       <auto-load-most-recent-job>false</auto-load-most-recent-job>
-      <solutions show-indicator="true" target-milestone="Production">
+      <solutions show-indicator="true" target-milestone="Calibration">
          <dismissed-solutions class="java.util.HashSet">
             <string>c32087b4bc7d659b53a81850c95e3e1ce7b32968</string>
             <string>3413d7f3da15d15e0bf98698019ccac94d9b9f2c</string>
@@ -1762,6 +1731,7 @@
             <string>b7b8cb370183f50fdcd3d3cb1d127957dd7e2163</string>
             <string>6302baae3977249310ded108f92d3baa37ec2f21</string>
             <string>9c6e320308c0ed1262a29a086bce6819d6f4ef19</string>
+            <string>a2f3564b47f178b4eb4bcb754deb1e7f11a6cb77</string>
             <string>997fe5c1a66cf4fa5c4a5605d85bc734eabd6d97</string>
             <string>36c12f5278985cab66ec062d3fc8023a5f413f7f</string>
             <string>6fd53f984c6d9003152bb53134d9fcba5e149e60</string>

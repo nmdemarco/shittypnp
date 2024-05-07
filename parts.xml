@@ -1,8 +1,47 @@
 <openpnp-parts>
-   <part id="FIDUCIAL-1X2-FIDUCIAL1X2" height-units="Millimeters" height="0.0" package-id="FIDUCIAL-1X2" speed="1.0" pick-retry-count="0"/>
-   <part id="R0805-1K" height-units="Millimeters" height="1.0" package-id="R0805" speed="1.0" pick-retry-count="0"/>
-   <part id="R0201-1K" height-units="Millimeters" height="0.25" package-id="R0201" speed="1.0" pick-retry-count="0"/>
-   <part id="R0402-1K" height-units="Millimeters" height="0.5" package-id="R0402" speed="1.0" pick-retry-count="0"/>
-   <part id="R0603-1K" height-units="Millimeters" height="0.75" package-id="R0603" speed="1.0" pick-retry-count="0"/>
-   <part id="FIDUCIAL-HOME" height-units="Millimeters" height="0.0" package-id="FIDUCIAL-HOME" speed="1.0" pick-retry-count="0"/>
+   <part fiducial-vision-id="FVS17c0817f15644964" id="FIDUCIAL-HOME" height-units="Millimeters" height="0.0" package-id="FIDUCIAL-HOME" speed="1.0" pick-retry-count="0"/>
+   <part id="CRYSTAL_3.2X2.5MM-20 MHz" height-units="Millimeters" height="0.8" package-id="CRYSTAL_3.2X2.5MM" speed="1.0" pick-retry-count="0"/>
+   <part id="VSSOP-8-LSF0102DCUR" height-units="Millimeters" height="0.9" package-id="VSSOP-8" speed="1.0" pick-retry-count="0"/>
+   <part id="VSSOP-8-OPA189IDGKT" height-units="Millimeters" height="1.75" package-id="VSSOP-8" speed="1.0" pick-retry-count="0"/>
+   <part id="TSSOP-14-TXU0304PWR" height-units="Millimeters" height="1.2" package-id="TSSOP-14" speed="1.0" pick-retry-count="0"/>
+   <part id="HTSSOP-28-TMC2226-SA-T" height-units="Millimeters" height="1.2" package-id="HTSSOP-28" speed="1.0" pick-retry-count="0"/>
+   <part id="WSON-6-LP5912-3.3DRVR" height-units="Millimeters" height="0.8" package-id="WSON-6" speed="1.0" pick-retry-count="0"/>
+   <part id="-LMR36015BRNX" height-units="Millimeters" height="1.0" package-id="" speed="1.0" pick-retry-count="0"/>
+   <part id="SOT-323-REF3330AIDCKT" height-units="Millimeters" height="0.6" package-id="SOT-323" speed="1.0" pick-retry-count="0"/>
+   <part id="SOIC-8-ATA6561-GAQW-N" height-units="Millimeters" height="1.75" package-id="SOIC-8" speed="1.0" pick-retry-count="0"/>
+   <part id="SOIC-14-MCP2518FDT-H/SL" height-units="Millimeters" height="1.75" package-id="SOIC-14" speed="1.0" pick-retry-count="0"/>
+   <part id="-CVS-01TB" height-units="Millimeters" height="1.45" package-id="" speed="1.0" pick-retry-count="0"/>
+   <part id="R0402-200K" height-units="Millimeters" height="0.4" package-id="R0402" speed="1.0" pick-retry-count="0"/>
+   <part id="R0402-10K" height-units="Millimeters" height="0.4" package-id="R0402" speed="1.0" pick-retry-count="0"/>
+   <part id="R0402-0R" height-units="Millimeters" height="0.4" package-id="R0402" speed="1.0" pick-retry-count="0"/>
+   <part id="R1206-0.1R" height-units="Millimeters" height="0.4" package-id="R1206" speed="1.0" pick-retry-count="0"/>
+   <part id="R0402-100K" height-units="Millimeters" height="0.4" package-id="R0402" speed="1.0" pick-retry-count="0"/>
+   <part id="R0402-1K5" height-units="Millimeters" height="0.4" package-id="R0402" speed="1.0" pick-retry-count="0"/>
+   <part id="R0402-1K" height-units="Millimeters" height="0.4" package-id="R0402" speed="1.0" pick-retry-count="0"/>
+   <part id="R0402-2K" height-units="Millimeters" height="0.4" package-id="R0402" speed="1.0" pick-retry-count="0"/>
+   <part id="R0402-24K9" height-units="Millimeters" height="0.4" package-id="R0402" speed="1.0" pick-retry-count="0"/>
+   <part id="R0805-60R4" height-units="Millimeters" height="0.6" package-id="R0805" speed="1.0" pick-retry-count="0"/>
+   <part id="SOT-23-ZXM61P03FTA" height-units="Millimeters" height="1.1" package-id="SOT-23" speed="1.0" pick-retry-count="0"/>
+   <part id="SOT-23-DMN3200U-7" height-units="Millimeters" height="1.1" package-id="SOT-23" speed="1.0" pick-retry-count="0"/>
+   <part id="LQFS[4.8x4.8]-10uH" height-units="Millimeters" height="3.0" package-id="LQFS[4.8x4.8]" speed="1.0" pick-retry-count="0"/>
+   <part id="L0603-1A" height-units="Millimeters" height="1.0" package-id="L0603" speed="1.0" pick-retry-count="0"/>
+   <part id="F0603-100mA" height-units="Millimeters" height="0.75" package-id="R0603" speed="1.0" pick-retry-count="0"/>
+   <part id="F1206-250mA" height-units="Millimeters" height="0.75" package-id="R1206" speed="1.0" pick-retry-count="0"/>
+   <part id="SOD923-D5V0L1B2S9-7" height-units="Millimeters" height="0.37" package-id="SOD923" speed="1.0" pick-retry-count="0"/>
+   <part id="SOD123-PTVS24VS1UR_115" height-units="Millimeters" height="1.0" package-id="SOD123" speed="1.0" pick-retry-count="0"/>
+   <part id="LED0603-LED Blue" height-units="Millimeters" height="0.45" package-id="LED0603" speed="1.0" pick-retry-count="0"/>
+   <part id="-ESD401DPYR" height-units="Millimeters" height="0.45" package-id="" speed="1.0" pick-retry-count="0"/>
+   <part id="SOD123-MBR230S1F-7" name="" height-units="Millimeters" height="1.0" package-id="SOD123" speed="1.0" pick-retry-count="0"/>
+   <part id="C0402-100nF" height-units="Millimeters" height="0.55" package-id="C0402" speed="1.0" pick-retry-count="0"/>
+   <part id="C0402-22nF" height-units="Millimeters" height="0.55" package-id="C0402" speed="1.0" pick-retry-count="0"/>
+   <part id="C[8x10.5]-100uF" height-units="Millimeters" height="10.3" package-id="C[8x10.5]" speed="1.0" pick-retry-count="0"/>
+   <part id="C0402-470pF" height-units="Millimeters" height="0.55" package-id="C0402" speed="1.0" pick-retry-count="0"/>
+   <part id="C1210-22uF" height-units="Millimeters" height="2.7" package-id="C1210" speed="1.0" pick-retry-count="0"/>
+   <part id="C0603-2.2uF" height-units="Millimeters" height="0.9" package-id="C0603" speed="1.0" pick-retry-count="0"/>
+   <part id="C0603-1uF" height-units="Millimeters" height="0.9" package-id="C0603" speed="1.0" pick-retry-count="0"/>
+   <part id="C0402-2.7pF" height-units="Millimeters" height="0.55" package-id="C0402" speed="1.0" pick-retry-count="0"/>
+   <part id="C1206-22uF" height-units="Millimeters" height="1.8" package-id="C1206" speed="1.0" pick-retry-count="0"/>
+   <part id="C1206-4.7uF" height-units="Millimeters" height="1.8" package-id="C1206" speed="1.0" pick-retry-count="0"/>
+   <part id="C0402-150pF" height-units="Millimeters" height="0.55" package-id="C0402" speed="1.0" pick-retry-count="0"/>
+   <part id="C0402-10pF" height-units="Millimeters" height="0.55" package-id="C0402" speed="1.0" pick-retry-count="0"/>
 </openpnp-parts>
