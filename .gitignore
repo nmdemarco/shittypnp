@@ -1,3 +1,6 @@
 /backups
 /log
 /scripts/examples
+/org.*/
+boards.xml
+panels.xml
